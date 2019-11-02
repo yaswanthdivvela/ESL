@@ -69,6 +69,8 @@
         <th>ACCOUNT NO.</th>
         <th>IFSC CODE</th>
         <th>INVOICE NO.</th>
+        <th>ITEM</th>
+        <th>QUANTITY(Kg)</th>
         <th>PAID</th>
       </tr>
     </thead>
@@ -79,6 +81,8 @@
         <td>{{listing.accs.acc}}</td>
         <td>{{listing.accs.ifsc}}</td>
         <td>{{listing.invoice}}</td>
+        <td>{{listing.item}}</td>
+        <td>{{listing.quantity}}</td>
         <td>
          <form action="{% url 'govlists' %}" method="POST" >
           {% csrf_token %}
